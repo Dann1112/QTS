@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manrique.daniel.quetantosabes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            /*Intent Se refiere a una 'tarea' a la que el componente padre puede responder, en este
+            caso la actividad, además especifica lo que puede hacer. Filtra lo que puede y no hacer,
+            permitiendo lo que puede hacer e ignorando lo que no quiere recibir
+            Debe tener "action", si no hay ningún action, el filtro no acepta ningun objeto Intent*/
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
