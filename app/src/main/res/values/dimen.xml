@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="splashLeftRightPad">80dp</dimen>
+    <dimen name="splashTopBotPad">160dp</dimen>
+
+</resources>
