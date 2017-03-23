@@ -6,4 +6,5 @@
     <string name="imageOfQuestion">Content Description related to question</string>
     <string name="answer">Answer</string>
     <string name="submit">Submit</string>
+    <string name="options">OPTIONS</string>
 </resources>
