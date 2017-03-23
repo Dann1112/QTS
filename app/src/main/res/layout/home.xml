@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".6"
+        android:contentDescription="@string/home_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/beach" />
+
+
+    <LinearLayout
     android:id="@+id/homeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+        android:alpha="40"
     android:baselineAligned="false"
     android:orientation="vertical">
 
@@ -14,7 +31,7 @@
         android:layout_weight="1"
         android:contentDescription="@string/app_name"
         android:padding="16dp"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/mexico" />
 
     <LinearLayout
         android:id="@+id/buttonsLayout"
@@ -26,29 +43,38 @@
         <Button
             android:id="@+id/playBtn"
             android:layout_width="136dp"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/log_btn"
             android:contentDescription="@string/play"
-            android:text="@string/play" />
+            android:text="@string/play"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/scoreBtn"
             android:layout_width="136dp"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/log_btn"
             android:contentDescription="@string/scoreboard"
-            android:text="@string/scoreboard" />
+            android:stateListAnimator="@null"
+            android:text="@string/scoreboard"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/optionsBtn"
             android:layout_width="136dp"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/log_btn"
             android:contentDescription="@string/options"
-            android:text="@string/options" />
+            android:stateListAnimator="@null"
+            android:text="@string/options"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </LinearLayout>
+</FrameLayout>
