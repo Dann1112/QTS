@@ -48,6 +48,7 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/log_btn"
             android:contentDescription="@string/play"
+            android:onClick="startGame"
             android:text="@string/play"
             android:textColor="@android:color/white" />
 
@@ -59,7 +60,6 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/log_btn"
             android:contentDescription="@string/scoreboard"
-            android:stateListAnimator="@null"
             android:text="@string/scoreboard"
             android:textColor="@android:color/white" />
 
@@ -71,7 +71,6 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/log_btn"
             android:contentDescription="@string/options"
-            android:stateListAnimator="@null"
             android:text="@string/options"
             android:textColor="@android:color/white" />
     </LinearLayout>
