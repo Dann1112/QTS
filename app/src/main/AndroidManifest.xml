@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/mexico"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -18,8 +18,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.manrique.daniel.quetantosabes.MainActivity" />
-        <activity android:name="com.manrique.daniel.quetantosabes.Question" />
+        <activity
+            android:name="com.manrique.daniel.quetantosabes.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.manrique.daniel.quetantosabes.Question"
+            android:exported="false" />
 
     </application>
 
